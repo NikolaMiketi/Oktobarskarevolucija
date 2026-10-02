@@ -3,7 +3,7 @@
 }
 
 .niconne-regular {
-  font-family: "Niconne", cursive;
+  font-family: "Niccone", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -12,7 +12,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #cac8c8;
-    font-family: "Niconne", cursive;
+    font-family: "Niccone", cursive;
 }
 
 header {
@@ -35,7 +35,7 @@ header > * {
 
 .intro {
     margin: 0 0 20px;
-    font-family: "Niconne", cursive;
+    font-family: "Niccone", cursive;
     font-size: clamp(2.8rem, 6vw, 5.5rem);
     line-height: 1.1;
     color: white;
@@ -44,7 +44,7 @@ header > * {
 
 .opis {
     margin: 0 auto;
-    font-family: "Niconne", cursive;
+    font-family: "Niccone", cursive;
     font-size: clamp(1.4rem, 2.5vw, 2.3rem);
     line-height: 1.5;
     width: min(100%, 750px);
@@ -80,7 +80,7 @@ main {
 
 .more {
     margin: 0 0 24px;
-    font-family: "Niconne", cursive;
+    font-family: "Niccone", cursive;
     font-size: clamp(1.5rem, 2.5vw, 2.2rem);
     color: #1b1b1b;
     line-height: 1.6;
