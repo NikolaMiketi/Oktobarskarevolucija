@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+.niconne-regular {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #cac8c8;
+    font-family: "Niconne", cursive;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+header > * {
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    margin: 0 0 20px;
+    font-family: "Niconne", cursive;
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    line-height: 1.1;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.opis {
+    margin: 0 auto;
+    font-family: "Niconne", cursive;
+    font-size: clamp(1.4rem, 2.5vw, 2.3rem);
+    line-height: 1.5;
+    width: min(100%, 750px);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slika1 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: grayscale(0.85) brightness(0.55) contrast(1.1);
+    opacity: 0.9;
+}
+
+main {
+    padding: 30px 20px 60px;
+    background: #cac8c8;
+}
+
+.content-card {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 24px 28px;
+}
+
+.more {
+    margin: 0 0 24px;
+    font-family: "Niconne", cursive;
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    color: #1b1b1b;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    width: min(100%, 250px);
+    height: 400px;
+    object-fit: cover;
+    border: 12px solid white;
+    border-radius: 30px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    .intro {
+        margin-bottom: 15px;
+    }
+
+    .opis {
+        width: 100%;
+    }
+
+    .content-card {
+        padding: 18px 16px;
+    }
+
+    .image-row {
+        gap: 12px;
+    }
+
+    .image-row img {
+        width: 100%;
+        max-width: 220px;
+        height: 300px;
+    }
+}
+
+
+.posledice{
+    font-family: Niccone, cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.evo{
+     font-family: Niccone, cursive;
+     font-size:30px;
+     text-align: center;
+     width: min(100%, 600px);
+     margin: 0 auto;
+}
+
+
+.bottom-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: min(100%, 980px);
+    margin: 18px auto 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.wee,
+.wee2 {
+    position: relative;
+    width: min(100%, 300px);
+    height: 360px;
+    object-fit: cover;
+    border: 10px solid rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
+.komunizam {
+    font-family: Niccone, cursive;
+    font-size: clamp(1.5rem, 2.5vw, 2.3rem);
+    line-height: 1.5;
+    width: min(100%, 860px);
+    margin: 18px auto 0;
+    text-align: center;
+    padding: 8px 18px 0;
+    color: #1b1b1b;
+}
+
+@media (max-width: 800px) {
+    .bottom-gallery {
+        gap: 12px;
+    }
+
+    .wee,
+    .wee2 {
+        width: min(100%, 220px);
+        height: 280px;
+    }
+
+    .komunizam {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
+.credits {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    filter: grayscale(0.8) brightness(0.72) blur(3px);
+    transform: scale(1.02);
+}
+
+.Nikola {
+    font-family: Niccone, cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 16px 24px;
+    background: rgba(55, 55, 55, 0.48);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+}
+footer {
+    position: relative;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
